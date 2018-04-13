@@ -19,5 +19,5 @@ I saved the server in a variable and connected the server to the socket. The mom
 In the end I made a "whatif" game. When the user begins the chat with "/whatif" there will come a random question for the whole chat to discuss. The questions are being saved in a array on the server. The array will be randomized every time the server is started.
 
 
-[whatifpreview]: whatifpreview.jpg
-[whatifchat]: whatifchat.jpg
+[whatifpreview]: whatifpreview.png
+[whatifchat]: whatifchat.png
