@@ -1,7 +1,8 @@
-## assignment 1
+## assignment 1 - What if game
 For the assignment I had to make a chat by implementing sockets. In the beginning I was struggling, because I didn't know where to start. I went on Google and was searching for a good tutorial. The tutorial on the website of sockets.io was something I didn't really understood. Eventually, I ended up in a really good YouTube tutorial who explained everything in great detail.
 
 ![whatifpreview]
+
 ![whatifchat]
 
 ## Progression
