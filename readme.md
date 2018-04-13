@@ -1,28 +1,16 @@
-# Real Time Web course repo
+## assignment 1
+For the assignment I had to make a chat by implementing sockets. In the beginning I was struggling, because I didn't know where to start. I went on Google and was searching for a good tutorial. The tutorial on the website of sockets.io was something I didn't really understood. Eventually, I ended up in a really good YouTube tutorial who explained everything in great detail.
 
-This is the course repo for the 2018 edition of the course 'Real Time Web' which is part of the minor 'web' taught at the University of Applied Sciences Amsterdam.
+## Progression
+I started with a basic Node.js setup with the modules I basically need: "express", "ejs" and "bodyparser". I than started installing the sockets packages with "npm install socket.io". With the module now implemented it was time to make a basic chat.
 
-During this course, students will:
-* Build a Node Web App which consumes an external data source through an API and serves a frontend using routing and templating techniques.
-* Create a "live" web app which reflects changes to the back-end data model in reactive front-end views, using real-time, event-based, messaging technologies like sockets or server-sent-events.
-* Describe their work in a professional readme with insightful diagrams showing the life cycle of their data.
+I saved the server in a variable and connected the server to the socket. The moment the server has been connected a callback function will be activated. The callback function contains all the information from the chat. In chat.js I defined what must happen when the actions has been completed. I also added a broadcast, so the "user is typing..." will be deleted the moment the user has send the message.
 
-## Week 1
-[Slides](https://drive.google.com/open?id=1QxeKsSXnf9poJFWoEe_slHuMb7apB-2eNyUTzi18kcQ)
+## Tools used
+* Express server
+* EJS templates
+* Socket.io
+* JavaScript
 
-[Assignments](https://drive.google.com/open?id=1OUspHz0enLpoVjbyHMHpAQCjSEmkn8rfHbkoSuwjw4M) (in Dutch)
-
-## Week 2
-[Slides](https://drive.google.com/open?id=1-tI7rFjHchbph6FEqpNvDi7XCh3Uy-3bohi_jBdZhcQ)
-
-[Assignments](https://drive.google.com/open?id=1rjE1bG-rrgfEOssMxCYr7Q0Ba5BJs9WKkvVvjI7y2fQ) (in Dutch)
-
-## Week 3
-[Slides](https://drive.google.com/open?id=1BHoe8Fif7nLA00V4WEANJANnObxHBnVnwnQHnfXl4aM)
-
-[Assignments](https://drive.google.com/open?id=1zoRC5kDeSQad8vdi62u6AEj_SfpvPzKE7wjYTsdO2JI) (in Dutch)
-
-## Grading
-In the first and second week you will receive oral feedback on your assignments. In week three you will have a chance to present your final assignment during an oral exam. This assessment will make up 100% of your grade for this course.
-
-> If you're seeing this message on a forked repo, it means one of our students hasn't changed the description yet 😈
+## The game
+In the end I made a "whatif" game. When the user begins the chat with "/whatif" there will come a random question for the whole chat to discuss. The questions are being saved in a array on the server. The array will be randomized every time the server is started.
